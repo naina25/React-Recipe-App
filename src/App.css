@@ -1,9 +1,16 @@
 .App {
   min-height: 100vh;
-  text-align: center;
-  background: #ddd6f3;
-  background: -webkit-linear-gradient(to right, #f8b8b4, #b7aed3);
-  background: linear-gradient(to right, #f7b0ac, #b0a8ca);
+  background: #305e52; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #81e2b5,
+    #356659
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #81e0b4,
+    #37685b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .search-form {
@@ -24,7 +31,7 @@
 }
 
 .search-btn {
-  background: lightcoral;
+  background: rgb(44, 70, 65);
   border: none;
   padding: 10px 20px;
   color: white;
@@ -32,4 +39,10 @@
 
 .search-btn:focus {
   outline: none;
+}
+
+.recipes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
